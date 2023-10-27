@@ -5,13 +5,15 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "dev": "nodemon --exec node --loader ts-node/esm --watch src src/main.ts"
+    "dev": "nodemon -e 'ts' --exec node --loader ts-node/esm --watch src src/main.ts"
   },
   "dependencies": {
+    "axios": "^1.6.0",
     "fingerprint-injector": "^2.1.42",
     "playwright": "^1.39.0"
   },
   "devDependencies": {
+    "@types/node": "^20.8.9",
     "nodemon": "^3.0.1",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.2.2"
