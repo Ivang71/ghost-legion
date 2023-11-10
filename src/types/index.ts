@@ -15,7 +15,8 @@ export interface IpApi {
     query: string
 }
 
-export interface ConnectionKey {
-    working: boolean
+export interface ProxyInfo {
     key: string
+    working: boolean
+    lastUsed: number
 }
